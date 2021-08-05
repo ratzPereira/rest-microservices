@@ -26,7 +26,6 @@ public class CurrencyExchangeController {
 		
 		CurrencyExchange currencyExchange = repository.findByFromAndTo(from, to);
 		
-		System.out.println(currencyExchange);
 		
 		if(currencyExchange == null) {
 			throw new RuntimeException("Unable to find data for " + from + " , to " + to);
